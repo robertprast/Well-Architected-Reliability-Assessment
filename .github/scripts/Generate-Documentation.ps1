@@ -14,6 +14,8 @@ if ($env:GITHUB_WORKSPACE) {
 }
 
 
+Write-Output "Hello, World!"
+
 
 if($moduleName)
 {
