@@ -1,0 +1,16 @@
+name: Bad thing
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+permissions:
+    contents: write
+
+jobs:
+  doabadthing:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: do bad thing
+      run: echo 'im doing a bad thing'
